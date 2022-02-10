@@ -1,0 +1,45 @@
+
+PS C:\Users\wordy\Desktop\CodingDojo\C#> md Hello.netCore
+
+
+    Directory: C:\Users\wordy\Desktop\CodingDojo\C#
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          2/7/2022  10:40 AM                Hello.netCore
+
+
+PS C:\Users\wordy\Desktop\CodingDojo\C#> cd Hello.netCore
+PS C:\Users\wordy\Desktop\CodingDojo\C#\Hello.netCore> dotnet new console
+
+Welcome to .NET Core 3.1!
+---------------------
+SDK Version: 3.1.302
+
+Telemetry
+---------
+The .NET Core tools collect usage data in order to help us improve your experience. The data is anonymous. It is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
+
+Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
+
+----------------
+Explore documentation: https://aka.ms/dotnet-docs
+Report issues and find source on GitHub: https://github.com/dotnet/core
+Find out what's new: https://aka.ms/dotnet-whats-new
+Learn about the installed HTTPS developer cert: https://aka.ms/aspnet-core-https
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli-docs
+Write your first app: https://aka.ms/first-net-core-app
+--------------------------------------------------------------------------------------
+Getting ready...
+The template "Console Application" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on C:\Users\wordy\Desktop\CodingDojo\C#\Hello.netCore\Hello.netCore.csproj...
+  Determining projects to restore...
+  Restored C:\Users\wordy\Desktop\CodingDojo\C#\Hello.netCore\Hello.netCore.csproj (in 153 ms).
+
+Restore succeeded.
+
+PS C:\Users\wordy\Desktop\CodingDojo\C#\Hello.netCore> dotnet run
+Hello World!

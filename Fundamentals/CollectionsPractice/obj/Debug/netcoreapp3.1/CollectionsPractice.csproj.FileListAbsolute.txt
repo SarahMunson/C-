@@ -1,0 +1,13 @@
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\CollectionsPractice\bin\Debug\netcoreapp3.1\CollectionsPractice.exe
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\CollectionsPractice\bin\Debug\netcoreapp3.1\CollectionsPractice.deps.json
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\CollectionsPractice\bin\Debug\netcoreapp3.1\CollectionsPractice.runtimeconfig.json
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\CollectionsPractice\bin\Debug\netcoreapp3.1\CollectionsPractice.runtimeconfig.dev.json
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\CollectionsPractice\bin\Debug\netcoreapp3.1\CollectionsPractice.dll
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\CollectionsPractice\bin\Debug\netcoreapp3.1\CollectionsPractice.pdb
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\CollectionsPractice\obj\Debug\netcoreapp3.1\CollectionsPractice.csprojAssemblyReference.cache
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\CollectionsPractice\obj\Debug\netcoreapp3.1\CollectionsPractice.AssemblyInfoInputs.cache
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\CollectionsPractice\obj\Debug\netcoreapp3.1\CollectionsPractice.AssemblyInfo.cs
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\CollectionsPractice\obj\Debug\netcoreapp3.1\CollectionsPractice.csproj.CoreCompileInputs.cache
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\CollectionsPractice\obj\Debug\netcoreapp3.1\CollectionsPractice.dll
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\CollectionsPractice\obj\Debug\netcoreapp3.1\CollectionsPractice.pdb
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\CollectionsPractice\obj\Debug\netcoreapp3.1\CollectionsPractice.genruntimeconfig.cache

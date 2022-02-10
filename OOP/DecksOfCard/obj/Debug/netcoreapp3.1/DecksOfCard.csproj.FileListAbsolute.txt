@@ -1,0 +1,13 @@
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\DecksOfCard\bin\Debug\netcoreapp3.1\DecksOfCard.exe
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\DecksOfCard\bin\Debug\netcoreapp3.1\DecksOfCard.deps.json
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\DecksOfCard\bin\Debug\netcoreapp3.1\DecksOfCard.runtimeconfig.json
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\DecksOfCard\bin\Debug\netcoreapp3.1\DecksOfCard.runtimeconfig.dev.json
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\DecksOfCard\bin\Debug\netcoreapp3.1\DecksOfCard.dll
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\DecksOfCard\bin\Debug\netcoreapp3.1\DecksOfCard.pdb
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\DecksOfCard\obj\Debug\netcoreapp3.1\DecksOfCard.csprojAssemblyReference.cache
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\DecksOfCard\obj\Debug\netcoreapp3.1\DecksOfCard.AssemblyInfoInputs.cache
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\DecksOfCard\obj\Debug\netcoreapp3.1\DecksOfCard.AssemblyInfo.cs
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\DecksOfCard\obj\Debug\netcoreapp3.1\DecksOfCard.csproj.CoreCompileInputs.cache
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\DecksOfCard\obj\Debug\netcoreapp3.1\DecksOfCard.dll
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\DecksOfCard\obj\Debug\netcoreapp3.1\DecksOfCard.pdb
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\DecksOfCard\obj\Debug\netcoreapp3.1\DecksOfCard.genruntimeconfig.cache

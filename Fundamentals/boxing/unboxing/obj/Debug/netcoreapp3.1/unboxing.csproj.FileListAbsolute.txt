@@ -1,0 +1,13 @@
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\boxing\unboxing\bin\Debug\netcoreapp3.1\unboxing.exe
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\boxing\unboxing\bin\Debug\netcoreapp3.1\unboxing.deps.json
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\boxing\unboxing\bin\Debug\netcoreapp3.1\unboxing.runtimeconfig.json
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\boxing\unboxing\bin\Debug\netcoreapp3.1\unboxing.runtimeconfig.dev.json
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\boxing\unboxing\bin\Debug\netcoreapp3.1\unboxing.dll
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\boxing\unboxing\bin\Debug\netcoreapp3.1\unboxing.pdb
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\boxing\unboxing\obj\Debug\netcoreapp3.1\unboxing.csprojAssemblyReference.cache
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\boxing\unboxing\obj\Debug\netcoreapp3.1\unboxing.AssemblyInfoInputs.cache
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\boxing\unboxing\obj\Debug\netcoreapp3.1\unboxing.AssemblyInfo.cs
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\boxing\unboxing\obj\Debug\netcoreapp3.1\unboxing.csproj.CoreCompileInputs.cache
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\boxing\unboxing\obj\Debug\netcoreapp3.1\unboxing.dll
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\boxing\unboxing\obj\Debug\netcoreapp3.1\unboxing.pdb
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\boxing\unboxing\obj\Debug\netcoreapp3.1\unboxing.genruntimeconfig.cache

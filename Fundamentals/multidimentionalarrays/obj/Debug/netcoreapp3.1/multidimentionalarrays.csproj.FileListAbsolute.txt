@@ -1,0 +1,13 @@
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\multidimentionalarrays\bin\Debug\netcoreapp3.1\multidimentionalarrays.exe
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\multidimentionalarrays\bin\Debug\netcoreapp3.1\multidimentionalarrays.deps.json
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\multidimentionalarrays\bin\Debug\netcoreapp3.1\multidimentionalarrays.runtimeconfig.json
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\multidimentionalarrays\bin\Debug\netcoreapp3.1\multidimentionalarrays.runtimeconfig.dev.json
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\multidimentionalarrays\bin\Debug\netcoreapp3.1\multidimentionalarrays.dll
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\multidimentionalarrays\bin\Debug\netcoreapp3.1\multidimentionalarrays.pdb
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\multidimentionalarrays\obj\Debug\netcoreapp3.1\multidimentionalarrays.csprojAssemblyReference.cache
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\multidimentionalarrays\obj\Debug\netcoreapp3.1\multidimentionalarrays.AssemblyInfoInputs.cache
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\multidimentionalarrays\obj\Debug\netcoreapp3.1\multidimentionalarrays.AssemblyInfo.cs
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\multidimentionalarrays\obj\Debug\netcoreapp3.1\multidimentionalarrays.csproj.CoreCompileInputs.cache
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\multidimentionalarrays\obj\Debug\netcoreapp3.1\multidimentionalarrays.dll
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\multidimentionalarrays\obj\Debug\netcoreapp3.1\multidimentionalarrays.pdb
+C:\Users\wordy\Desktop\CodingDojo\C#\Fundamentals\multidimentionalarrays\obj\Debug\netcoreapp3.1\multidimentionalarrays.genruntimeconfig.cache

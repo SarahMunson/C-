@@ -1,0 +1,13 @@
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\HungryNinjas\bin\Debug\netcoreapp3.1\HungryNinjas.exe
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\HungryNinjas\bin\Debug\netcoreapp3.1\HungryNinjas.deps.json
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\HungryNinjas\bin\Debug\netcoreapp3.1\HungryNinjas.runtimeconfig.json
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\HungryNinjas\bin\Debug\netcoreapp3.1\HungryNinjas.runtimeconfig.dev.json
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\HungryNinjas\bin\Debug\netcoreapp3.1\HungryNinjas.dll
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\HungryNinjas\bin\Debug\netcoreapp3.1\HungryNinjas.pdb
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\HungryNinjas\obj\Debug\netcoreapp3.1\HungryNinjas.csprojAssemblyReference.cache
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\HungryNinjas\obj\Debug\netcoreapp3.1\HungryNinjas.AssemblyInfoInputs.cache
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\HungryNinjas\obj\Debug\netcoreapp3.1\HungryNinjas.AssemblyInfo.cs
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\HungryNinjas\obj\Debug\netcoreapp3.1\HungryNinjas.csproj.CoreCompileInputs.cache
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\HungryNinjas\obj\Debug\netcoreapp3.1\HungryNinjas.dll
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\HungryNinjas\obj\Debug\netcoreapp3.1\HungryNinjas.pdb
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\HungryNinjas\obj\Debug\netcoreapp3.1\HungryNinjas.genruntimeconfig.cache
