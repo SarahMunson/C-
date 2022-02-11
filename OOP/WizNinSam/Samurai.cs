@@ -3,7 +3,7 @@ using System;
 namespace WizNinSam{
     public class Samurai : Human
     {
-        public Samurai(string name, int str, int intel, int dex) : base (name, 3, 3, 3, 200)
+        public Samurai(string name) : base (name, 3, 3, 3, 200)
         {
         }
 

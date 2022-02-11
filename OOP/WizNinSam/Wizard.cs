@@ -6,7 +6,7 @@ namespace WizNinSam{
         //add unique features to being a Wizard if any
 
         //I'm wondering WHY this works with my arguments until I try to delete everything up to name I realized that I had to hard code the base values. I'm just confused ;(
-        public Wizard(string name, int str, int dex) : base(name, 3, 25, 3, 50)
+        public Wizard(string name) : base(name, 3, 25, 3, 50)
         {
             
         }
