@@ -4,7 +4,7 @@ namespace WizNinSam
 {
     public class Ninja : Human
     {
-        public Ninja(string name, int str, int intel, int hp) : base(name, str, intel, 175, hp)
+        public Ninja(string name, int str, int intel, int hp) : base( name, 3,  3, 175, 100)
         {
         }
 

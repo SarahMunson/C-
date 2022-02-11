@@ -9,7 +9,7 @@ namespace WizNinSam
         public int Strength;
         public int Intelligence;
         public int Dexterity;
-        public int health {get; set;}
+        public int health { get; set; }
 
         public Human(string name)
         {
@@ -28,6 +28,8 @@ namespace WizNinSam
             Dexterity = dex;
             health = hp;
         }
+
+
 
         // Build Attack method
         public virtual int Attack(Human target)

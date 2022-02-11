@@ -13,6 +13,8 @@ namespace WizNinSam
             Console.WriteLine(Luigi.Attack(Karma));
             Console.WriteLine(Alfredo.Attack(Karma));
             Console.WriteLine(Luigi.Heal(Karma));
+            Alfredo.Attack(Karma);
+            Console.WriteLine(Karma.health);
         }
     }
 }
