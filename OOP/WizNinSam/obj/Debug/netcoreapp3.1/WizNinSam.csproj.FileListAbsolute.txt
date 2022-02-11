@@ -1,0 +1,13 @@
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\WizNinSam\bin\Debug\netcoreapp3.1\WizNinSam.exe
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\WizNinSam\bin\Debug\netcoreapp3.1\WizNinSam.deps.json
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\WizNinSam\bin\Debug\netcoreapp3.1\WizNinSam.runtimeconfig.json
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\WizNinSam\bin\Debug\netcoreapp3.1\WizNinSam.runtimeconfig.dev.json
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\WizNinSam\bin\Debug\netcoreapp3.1\WizNinSam.dll
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\WizNinSam\bin\Debug\netcoreapp3.1\WizNinSam.pdb
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\WizNinSam\obj\Debug\netcoreapp3.1\WizNinSam.csprojAssemblyReference.cache
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\WizNinSam\obj\Debug\netcoreapp3.1\WizNinSam.AssemblyInfoInputs.cache
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\WizNinSam\obj\Debug\netcoreapp3.1\WizNinSam.AssemblyInfo.cs
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\WizNinSam\obj\Debug\netcoreapp3.1\WizNinSam.csproj.CoreCompileInputs.cache
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\WizNinSam\obj\Debug\netcoreapp3.1\WizNinSam.dll
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\WizNinSam\obj\Debug\netcoreapp3.1\WizNinSam.pdb
+C:\Users\wordy\Desktop\CodingDojo\C#\OOP\WizNinSam\obj\Debug\netcoreapp3.1\WizNinSam.genruntimeconfig.cache
