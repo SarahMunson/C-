@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Foods</title>
+</head>
+<body>
+    <h1>Here are some delicious foods!</h1>
+    @{
+        string[] foods = {"Apple Pie", "Burritos", "Clams Casino", "Donuts"};
+        for(int idx = 0; idx < foods.Length; idx++)
+        {
+            if(foods[idx].StartsWith("C"))
+            {
+                <p style="color:red"> @foods[idx]</p>
+            } else{
+
+            <p>@foods[idx]</p>
+            }
+        }
+    }
+</body>
+</html>
