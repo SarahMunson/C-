@@ -1,0 +1,16 @@
+p {
+    color: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    word-spacing: .1em;
+    border: 1px solid green;
+    margin: 3px;
+    padding: 4px;
+    width: 20%;
+}
+
+img {
+    margin: 3px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
