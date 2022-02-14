@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="container">
+    <h2>Random passcode</h2>
+    @* if passcode in session, display *@
+    <p>
+        @ViewBag.randomPasscode
+    </p>
+    <a href="/generate" class="btn btn-success">Generate</a>
+</div>
