@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Survey;
+<div class="text-center">
+
+    <form action="result" method="post">
+        <div class="form-group container">
+            <label for="name">Your Name:</label>
+            <input asp-for="name" class="form-control">
+            <span asp-validation-for="name" class="text-danger"></span>
+            <label for="location">Dojo Location:</label>
+            <select asp-for="location" class="form-select form-control">
+                <option value="San Jose">San Jose</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Arlington">Arlington</option>
+            </select>
+            <span asp-validation-for="location" class="text-danger"></span>
+            <br>
+            <label for="language">Favorite Language:</label>
+            <input asp-for="language" class="form-control">
+            <span asp-validation-for="language" class="text-danger"></span>
+            <label for="comment">Comment (optional)</label><br>
+            <textarea asp-for="comment" cols="80" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Submit" class="btn btn-primary">
+        </div>
+    </form>
+    <table class="table table-striped">
+        <tr>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Fave Language</th>
+            <th>Comment</th>
+        </tr>
+        @{
+            foreach (Survey s in ViewBag.FormInfo)
+            {
+                <tr>
+                    <td>@s.name</td>
+                    <td>@s.location</td>
+                    <td>@s.language</td>
+                    <td>@s.comment</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
