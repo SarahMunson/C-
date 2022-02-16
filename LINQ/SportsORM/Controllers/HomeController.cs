@@ -32,35 +32,35 @@ namespace SportsORM.Controllers
         public IActionResult Level1()
         {
             ViewBag.allWomens = _context.Leagues
-            .Where(l => l.Name.Contains("Womens"));
+                .Where(l => l.Name.Contains("Womens"));
             ViewBag.Hockey=  _context.Leagues
                 .Where(l => l.Sport.Contains("Hockey"));
             ViewBag.notFootball=_context.Leagues
                 .Where(l => !l.Sport.Contains("Football"));
             ViewBag.conferences=_context.Leagues
-            .Where(l => l.Name.Contains("Conference"));
+                .Where(l => l.Name.Contains("Conference"));
             ViewBag.atlantic=_context.Leagues
-            .Where(l => l.Name.Contains("Atlantic"));
+                .Where(l => l.Name.Contains("Atlantic"));
             ViewBag.dallas=_context.Teams
-            .Where(t => t.Location.Contains("Dallas"));
+                .Where(t => t.Location.Contains("Dallas"));
             ViewBag.raptors=_context.Teams
-            .Where(t => t.TeamName.Contains("Raptors"));
+                .Where(t => t.TeamName.Contains("Raptors"));
             ViewBag.city=_context.Teams
-            .Where(t => t.Location.Contains("City"));
+                .Where(t => t.Location.Contains("City"));
             ViewBag.startsWithT=_context.Teams
-            .Where(t => t.TeamName.Contains("T"));
+                .Where(t => t.TeamName.Contains("T"));
             ViewBag.orderedByLocation=_context.Teams
-            .OrderBy(t => t.Location);
+                .OrderBy(t => t.Location);
             ViewBag.reverseOrderedByTeam=_context.Teams
-            .OrderByDescending(t => t.TeamName);
+                .OrderByDescending(t => t.TeamName);
             ViewBag.lastNameCoop=_context.Players
-            .Where(p => p.LastName.Contains("Cooper"));
+                .Where(p => p.LastName.Contains("Cooper"));
             ViewBag.firstNameJosh=_context.Players
-            .Where(p => p.FirstName.Contains("Joshua"));
+                .Where(p => p.FirstName.Contains("Joshua"));
             ViewBag.allCoopNotJosh=_context.Players
-            .Where(p => p.FirstName.Contains("Joshua") || p.LastName.Contains("Cooper"));
+                .Where(p => p.LastName.Contains("Cooper") && !p.FirstName.Contains("Joshua"));
             ViewBag.allAlexOrWyatt=_context.Players
-            .Where(p => p.FirstName.Contains("Alexander") || p.FirstName.Contains("Wyatt"));
+                .Where(p => p.FirstName.Contains("Alexander") || p.FirstName.Contains("Wyatt"));
 
             return View();
         }
