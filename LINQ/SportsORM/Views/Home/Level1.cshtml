@@ -1,0 +1,188 @@
+<div class="card">
+    <div class="card-header bg-dark text-light">Level 1</div>
+    <div class="card-body">
+        <p>Using the SportsORM, complete all the following queries and show their results on Level1.cshtml.</p>
+        <ol>
+            <li>...all womens' leagues</li>
+            <li>...all leagues where sport is any type of hockey</li>
+            <li>...all leagues where sport is something OTHER THAN football</li>
+            <li>...all leagues that call themselves "conferences"</li>
+            <li>...all leagues in the Atlantic region</li>
+            <li>...all teams based in Dallas</li>
+            <li>...all teams named the Raptors</li>
+            <li>...all teams whose location includes "City"</li>
+            <li>...all teams whose names begin with "T"</li>
+            <li>...all teams, ordered alphabetically by location</li>
+            <li>...all teams, ordered by team name in reverse alphabetical order</li>
+            <li>...every player with last name "Cooper"</li>
+            <li>...every player with first name "Joshua"</li>
+            <li>...every player with last name "Cooper" EXCEPT those with "Joshua" as the first name</li>
+            <li>...all players with first name "Alexander" OR first name "Wyatt"</li>
+        </ol>
+    </div>
+    <div class="card-header bg-dark text-light">All Womens</div>
+    <div class="card-body">
+        <ul>
+            @{
+                foreach (League l in ViewBag.allWomens)
+                {
+                    <li>@l.Name</li>
+                }
+            }
+        </ul>
+    </div>
+    <div class="card-header bg-dark text-light">Any Type of Hockey</div>
+    <div class="card-body">
+        <ul>
+            @{
+                foreach (League l in ViewBag.Hockey)
+                {
+                    <li>@l.Name</li>
+                }
+            }
+        </ul>
+    </div>
+    <div class="card-header bg-dark text-light">Not Football</div>
+    <div class="card-body">
+        <ul>
+            @{
+                foreach (League l in ViewBag.notFootball)
+                {
+                    <li>@l.Name</li>
+                }
+            }
+        </ul>
+    </div>
+    <div class="card-header bg-dark text-light">Called "Conferences"</div>
+    <div class="card-body">
+        <ul>
+            @{
+                foreach (League l in ViewBag.conferences)
+                {
+                    <li>@l.Name</li>
+                }
+            }
+        </ul>
+    </div>
+    <div class="card-header bg-dark text-light">Atlantic Region</div>
+    <div class="card-body">
+        <ul>
+            @{
+                foreach (League l in ViewBag.atlantic)
+                {
+                    <li>@l.Name</li>
+                }
+            }
+        </ul>
+    </div>
+    <div class="card-header bg-dark text-light">Based in Dallas</div>
+    <div class="card-body">
+        <ul>
+            @{
+                foreach (Team t in ViewBag.dallas)
+                {
+                    <li>@t.Location @t.TeamName</li> 
+                }
+            }
+        </ul>
+    </div>
+    <div class="card-header bg-dark text-light">Named Raptors</div>
+    <div class="card-body">
+        <ul>
+            @{
+                foreach (Team t in ViewBag.raptors)
+                {
+                    <li>@t.Location @t.TeamName</li> 
+                }
+            }
+        </ul>
+    </div>
+    <div class="card-header bg-dark text-light">Location Includes "City"</div>
+    <div class="card-body">
+        <ul>
+            @{
+                foreach (Team t in ViewBag.city)
+                {
+                    <li>@t.Location @t.TeamName</li> 
+                }
+            }
+        </ul>
+    </div>
+    <div class="card-header bg-dark text-light">Name Begins with "T"</div>
+    <div class="card-body">
+        <ul>
+            @{
+                foreach (Team t in ViewBag.startsWithT)
+                {
+                    <li>@t.Location @t.TeamName</li> 
+                }
+            }
+        </ul>
+    </div>
+    <div class="card-header bg-dark text-light">Ordered by Location</div>
+    <div class="card-body">
+        <ul>
+            @{
+                foreach (Team t in ViewBag.orderedByLocation)
+                {
+                    <li>@t.Location @t.TeamName</li> 
+                }
+            }
+        </ul>
+    </div>
+    <div class="card-header bg-dark text-light">Ordered by Team Name in Reverse</div>
+    <div class="card-body">
+        <ul>
+            @{
+                foreach (Team t in ViewBag.reverseOrderedByTeam)
+                {
+                    <li>@t.TeamName</li> 
+                }
+            }
+        </ul>
+    </div>
+    <div class="card-header bg-dark text-light">Last Name Cooper</div>
+    <div class="card-body">
+        <ul>
+            @{
+                foreach (Player p in ViewBag.lastNameCoop)
+                {
+                    <li>@p.FirstName @p.LastName</li>
+                }
+            }
+        </ul>
+    </div>
+    <div class="card-header bg-dark text-light">First Name Joshua</div>
+    <div class="card-body">
+        <ul>
+            @{
+                foreach (Player p in ViewBag.firstNameJosh)
+                {
+                    <li>@p.FirstName @p.LastName</li>
+                }
+            }
+        </ul>
+    </div>
+    <div class="card-header bg-dark text-light">Not Joshua Cooper</div>
+    <div class="card-body">
+        <ul>
+            @{
+                foreach (Player p in ViewBag.allCoopNotJosh)
+                {
+                    <li>@p.FirstName @p.LastName</li>
+                }
+            }
+        </ul>
+    </div>
+    <div class="card-header bg-dark text-light">First Name Alexander or Wyatt</div>
+    <div class="card-body">
+        <ul>
+            @{
+                foreach (Player p in ViewBag.allAlexOrWyatt)
+                {
+                    <li>@p.FirstName @p.LastName</li>
+                }
+            }
+        </ul>
+    </div>
+</div>
