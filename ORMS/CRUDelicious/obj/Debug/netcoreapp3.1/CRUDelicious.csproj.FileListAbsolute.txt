@@ -58,4 +58,4 @@ C:\Users\wordy\Desktop\CodingDojo\C#\ORMS\CRUDelicious\obj\Debug\netcoreapp3.1\C
 C:\Users\wordy\Desktop\CodingDojo\C#\ORMS\CRUDelicious\obj\Debug\netcoreapp3.1\CRUDelicious.pdb
 C:\Users\wordy\Desktop\CodingDojo\C#\ORMS\CRUDelicious\obj\Debug\netcoreapp3.1\CRUDelicious.genruntimeconfig.cache
 C:\Users\wordy\Desktop\CodingDojo\C#\ORMS\CRUDelicious\obj\Debug\netcoreapp3.1\Razor\Views\Home\NewDish.cshtml.g.cs
-C:\Users\wordy\Desktop\CodingDojo\C#\ORMS\CRUDelicious\obj\Debug\netcoreapp3.1\Razor\Views\Home\EditOne.cshtml.g.cs
+C:\Users\wordy\Desktop\CodingDojo\C#\ORMS\CRUDelicious\obj\Debug\netcoreapp3.1\Razor\Views\Home\EditDish.cshtml.g.cs
