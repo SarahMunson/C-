@@ -2,7 +2,31 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@model Dish
+
+<div>
+    <a href="create">Add a Dish</a>
+    <table class="table table-striped table-primary">
+        <tr>
+            <th>Name</th>
+            <th>Chef</th>
+            <th>Tastiness</th>
+            <th>Calories</th>
+            <th>Description</th>
+        </tr>
+
+    @{
+        foreach(Dish d in ViewBag.allDishes)
+        {
+        <tr>
+                <td>@d.Name</td>
+                <td>@d.Chef</td>
+                <td>@d.Tastiness</td>
+                <td>@d.Calories</td>
+                <td>@d.Description</td>
+                <td><a href="/edit/@d.DishId">Edit</a> | <a href="/delete/@d.DishId">Delete</a></td>
+        </tr>
+        }
+    }
+    </table>
 </div>
