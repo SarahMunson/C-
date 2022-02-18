@@ -30,9 +30,9 @@ namespace LoginAndRegistration.Controllers
         [HttpPost("register")]
         public IActionResult Register(User newUser)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                if(_context.Users.Any(u => u.Email == newUser.Email))
+                if (_context.Users.Any(u => u.Email == newUser.Email))
                 {
                     ModelState.AddModelError("Email", "Email is already in use!");
                     return View("Index");
@@ -49,26 +49,34 @@ namespace LoginAndRegistration.Controllers
         }
 
         [HttpGet("success")]
-        public IActionResult Success(){
-            string email = HttpContext.Session.GetString("UserEmail");
-            User loggedIn = _context.Users.FirstOrDefault(d => d.Email == email);
-            return View(loggedIn);
+        public IActionResult Success()
+        {
+            if ( HttpContext.Session.GetString("UserEmail") != null)
+            {
+                {
+                    string email = HttpContext.Session.GetString("UserEmail");
+                    User loggedIn = _context.Users.FirstOrDefault(d => d.Email == email);
+                    return View(loggedIn);
+                }
+            } else {
+                return View("Index");
+            }
         }
 
         [HttpPost("login")]
         public IActionResult Login(LogUser logUser)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 User userInDb = _context.Users.FirstOrDefault(s => s.Email == logUser.LEmail);
-                if(userInDb == null)
+                if (userInDb == null)
                 {
                     ModelState.AddModelError("LPassword", "Incorrect user information, please register");
                     return View("Index");
                 }
                 PasswordHasher<LogUser> Hasher = new PasswordHasher<LogUser>();
                 PasswordVerificationResult result = Hasher.VerifyHashedPassword(logUser, userInDb.Password, logUser.LPassword);
-                if(result == 0)
+                if (result == 0)
                 {
                     ModelState.AddModelError("LPassword", "Incorrect user information, please register");
                     return View("Index");
