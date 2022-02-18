@@ -4,7 +4,8 @@
         <p>Using the SportsORM, complete all the following queries and show their results on Level2.cshtml.</p>
         <ol>
             <li>...all teams in the Atlantic Soccer Conference</li>
-            <li>...all (current) players on the Boston Penguins (Hint: Boston is the Location, Penguins is the TeamName)</li>
+            <li>...all (current) players on the Boston Penguins (Hint: Boston is the Location, Penguins is the TeamName)
+            </li>
             <li>...all (current) players in the International Collegiate Baseball Conference</li>
             <li>...all (current) players in the American Conference of Amateur Football with last name "Lopez"</li>
             <li>...all football players</li>
@@ -13,4 +14,105 @@
             <li>...everyone with the last name "Flores" who DOESN'T (currently) play for the Washington Roughriders</li>
         </ol>
     </div>
+    <div class="card-header bg-dark text-light">Atlantic Soccer Conference</div>
+    <div class="card-body">
+        @{
+            foreach (Team t in ViewBag.AtlSoccer)
+            {
+                <li>@t.Location @t.TeamName</li>
+            }
+        }
+    </div>
+    <div class="card-header bg-dark text-light">Players in Boston Penguins</div>
+    <div class="card-body">
+        @{
+            foreach (Player p in ViewBag.PenguinsPlayers)
+            {
+                <li>@p.FirstName @p.LastName</li>
+            }
+        }
+    </div>
+    <div class="card-header bg-dark text-light">Players in International Collegiate Baseball Conference</div>
+    <div class="card-body">
+        @{
+            foreach (Team t in ViewBag.IntnlBaseballConf)
+            {
+                <li>@t.TeamName</li>
+                <ul>
+                    @foreach (Player p in t.CurrentPlayers)
+                    {
+                        <li>@p.FirstName @p.LastName</li>
+                    }
+                </ul>
+            }
+        }
+    </div>
+    <div class="card-header bg-dark text-light">Players in American Conference of Amateur Football "Lopez"</div>
+    <div class="card-body">
+        @{
+            foreach (Team t in ViewBag.Lopez)
+            {
+                @foreach (Player p in t.CurrentPlayers)
+                {
+                    if (p.LastName == "Lopez")
+                    {
+                        <li>@p.FirstName @p.LastName</li>
+                    }
+                }
+            }
+        }
+    </div>
+    <div class="card-header bg-dark text-light">All Football Players</div>
+    <div class="card-body">
+        @{
+            foreach (Team t in ViewBag.AllFootball)
+            {
+                <li>@t.TeamName</li>
+                <ul>
+                    @foreach (Player p in t.CurrentPlayers)
+                    {
+                        <li>@p.FirstName @p.LastName</li>
+                    }
+                </ul>
+            }
+        }
+    </div>
+    <div class="card-header bg-dark text-light">All Teams with Player "Sophia"</div>
+    <div class="card-body">
+        @{
+            foreach (Team t in ViewBag.AllSophias)
+            {
+                <ul>
+                    @foreach (Player p in t.CurrentPlayers)
+                    {
+                        if(p.FirstName == "Sophia")
+                            {
+                            <li>@p.CurrentTeam.TeamName - @p.FirstName @p.LastName</li>
+                            }
+                    }
+                </ul>
+            }
+        }
+    </div>  
+    <div class="card-header bg-dark text-light">Last Name "Flores" NOT in Atlanta Raptors</div>
+    <div class="card-body">
+        @{
+            foreach (Team t in ViewBag.AllFlores)
+            {
+                <ul>
+                    @foreach (Player p in t.CurrentPlayers)
+                    {
+                        if(p.LastName == "Flores")
+                            {
+                                if(p.CurrentTeam.TeamName != "Raptors"){
+                                    <li>@p.CurrentTeam.TeamName - @p.FirstName @p.LastName</li>
+                                }
+                            }
+                    }
+                </ul>
+            }
+        }        
+    </div>
+
+
 </div>

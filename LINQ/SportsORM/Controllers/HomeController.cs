@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SportsORM.Models;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace SportsORM.Controllers
@@ -68,6 +69,16 @@ namespace SportsORM.Controllers
         [HttpGet("level_2")]
         public IActionResult Level2()
         {
+            ViewBag.AtlSoccer = _context.Teams.Include(l => l.CurrLeague)
+            .Where(f => f.CurrLeague.Name == "Atlantic Soccer Conference");
+            ViewBag.PenguinsPlayers = _context.Players.Include(t => t.CurrentTeam)
+            .Where(c => c.CurrentTeam.TeamName == "Penguins");
+            ViewBag.IntnlBaseballConf = _context.Teams.Where(l => l.CurrLeague.Name == "International Collegiate Baseball Conference").Include(l => l.CurrentPlayers)
+            .ToList();
+            ViewBag.Lopez = _context.Teams.Where(l => l.CurrLeague.Name == "American Conference of Amateur Football").Include(p => p.CurrentPlayers);
+            ViewBag.AllFootball = _context.Teams.Where(l => l.CurrLeague.Name.Contains("Football")).Include(p => p.CurrentPlayers);
+            ViewBag.AllSophias = _context.Teams.Include(c => c.CurrentPlayers);
+            ViewBag.AllFLores = _context.Teams.Include(c => c.CurrentPlayers);
             return View();
         }
 

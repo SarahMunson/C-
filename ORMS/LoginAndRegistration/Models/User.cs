@@ -23,7 +23,6 @@ namespace LoginAndRegistration.Models
         public DateTime CreatedAt {get;set;} = DateTime.Now;
         public DateTime UpdatedAt {get;set;} = DateTime.Now;
 
-        // NotMapped means it will NOT go into our database
         [NotMapped]
         [Compare("Password")]
         [DataType(DataType.Password)]
