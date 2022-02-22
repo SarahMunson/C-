@@ -12,7 +12,8 @@ namespace ChefsNDishes.Models
         [Required]
         public string LastName { get; set; }
         [Required]
-        public DateTime DOB { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime DOB { get; set; } 
         public List<Dish> Dish { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;

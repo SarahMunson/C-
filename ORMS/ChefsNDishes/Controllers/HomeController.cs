@@ -38,10 +38,40 @@ namespace ChefsNDishes.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Chefs.Add(newChef);
-                _context.SaveChanges();
-                return RedirectToAction("Index");
-            } else {
+                if ((DateTime.Now.Year - newChef.DOB.Year) < 18)
+                {
+                    ModelState.AddModelError("DOB", "Chef must be over 18 years of age");
+                    return View("addChef");
+                } 
+                if((DateTime.Now.Year - newChef.DOB.Year) == 18)
+                {
+                    if (DateTime.Now.Month < newChef.DOB.Month)
+                    {
+                    ModelState.AddModelError("DOB", "Chef must be over 18 years of age");
+                    return View("addChef");
+                    }
+                    if(DateTime.Now.Month == newChef.DOB.Month){
+                        if (DateTime.Now.Day < newChef.DOB.Day)
+                        {
+                            ModelState.AddModelError("DOB", "Chef must be over 18 years of age");
+                            return View("addChef");
+                        }
+                    }
+                }
+                if (newChef.DOB > DateTime.Now)
+                {
+                    ModelState.AddModelError("DOB", "Date must be in the past");
+                    return View("addChef");
+                }
+                else
+                {
+                    _context.Chefs.Add(newChef);
+                    _context.SaveChanges();
+                    return RedirectToAction("Index");
+                }
+            }
+            else
+            {
                 return View("addChef");
             }
         }
@@ -64,12 +94,14 @@ namespace ChefsNDishes.Controllers
         [HttpPost("newDish")]
         public IActionResult addNewDish(Dish newDish)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 _context.Dishes.Add(newDish);
                 _context.SaveChanges();
                 return RedirectToAction("Dishes");
-            } else {
+            }
+            else
+            {
                 ViewBag.AllChefs = _context.Chefs.Include(d => d.Dish).ToList();
                 return View("newDish");
             }

@@ -17,7 +17,7 @@
                 foreach(Chef c in ViewBag.AllChefs){
                     <tr>
                     <td>@c.FirstName</td>
-                    <td>@c.DOB </td>
+                    <td>@(DateTime.Now.Year - c.DOB.Year)</td>
                     <td>@c.Dish.Count</td>
                     </tr>
                 }
