@@ -9,8 +9,10 @@ namespace ChefsNDishes.Models
         [Required]
         public string Name { get; set; }
         [Required]
+        [Range(1,5, ErrorMessage="Choose a number between 1 & 5")]
         public int Tastiness { get; set; }
         [Required]
+        [Range(0, 100000)]
         public int Calories { get; set; }
         [Required]
         public string Description { get; set; }
