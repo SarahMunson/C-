@@ -1,0 +1,25 @@
+@model Dish
+<h1 class="mx-4">Yum, take a look at our tasty dishes!</h1>
+<a href="/newDish">Add a Dish</a>
+<table class="table table-striped">
+    <tr>
+        <th>Name</th>
+        <th>Chef</th>
+        <th>Tastiness</th>
+        <th>Calories</th>
+    </tr>
+    @{
+        foreach(Chef c in ViewBag.allChefs)
+        {
+            foreach(Dish d in c.Dish)
+            {
+            <tr>
+                <td>@d.Name</td>
+                <td>@d.Chef.FirstName</td>
+                <td>@d.Tastiness</td>
+                <td>@d.Calories</td>
+            </tr>
+            }
+        }
+    }
+</table>
