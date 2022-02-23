@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\ChefsnDishes\\ChefsNDishes.csproj",
+  "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\BankAccounts\\BankAccounts.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14399,86 +14399,46 @@
     ],
     "CSharpLanguageVersion": 800
   },
-  "RootNamespace": "ChefsNDishes",
+  "RootNamespace": "BankAccounts",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\ChefsnDishes\\Views\\Home\\newDish.cshtml",
-      "TargetPath": "Views\\Home\\newDish.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\ChefsnDishes\\Views\\Home\\addChef.cshtml",
-      "TargetPath": "Views\\Home\\addChef.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\ChefsnDishes\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\ChefsnDishes\\BankAccounts\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "BankAccounts\\Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\ChefsnDishes\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\BankAccounts\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\ChefsnDishes\\BankAccounts\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "BankAccounts\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\ChefsnDishes\\BankAccounts\\Views\\_ViewStart.cshtml",
-      "TargetPath": "BankAccounts\\Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\ChefsnDishes\\BankAccounts\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "BankAccounts\\Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\ChefsnDishes\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\ChefsnDishes\\BankAccounts\\Views\\_ViewImports.cshtml",
-      "TargetPath": "BankAccounts\\Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\ChefsnDishes\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\ChefsnDishes\\Views\\Home\\Dishes.cshtml",
-      "TargetPath": "Views\\Home\\Dishes.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\ChefsnDishes\\BankAccounts\\Views\\Home\\Index.cshtml",
-      "TargetPath": "BankAccounts\\Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\ChefsnDishes\\BankAccounts\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "BankAccounts\\Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\ChefsnDishes\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\BankAccounts\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\ChefsnDishes\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\BankAccounts\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\BankAccounts\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\BankAccounts\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\BankAccounts\\Views\\Home\\Login.cshtml",
+      "TargetPath": "Views\\Home\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\BankAccounts\\Views\\Home\\Dashboard.cshtml",
+      "TargetPath": "Views\\Home\\Dashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\wordy\\Desktop\\CodingDojo\\c#\\ORMs\\BankAccounts\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     }
   ],

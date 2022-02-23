@@ -79,7 +79,6 @@ namespace ChefsNDishes.Controllers
         [HttpGet("dishes")]
         public IActionResult Dishes()
         {
-            ViewBag.allDishes = _context.Dishes.ToList();
             ViewBag.AllChefs = _context.Chefs.Include(d => d.Dish).ToList();
             return View();
         }
