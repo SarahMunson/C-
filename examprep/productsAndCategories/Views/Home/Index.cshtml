@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Category
+
+<div class="text-center">
+    <h1 class="display-4"> @Model.Name</h1>
+</div>
+<div class="d-flex">
+
+    <div class="col justify-content-center">
+        <h3>Products:</h3>
+        <ul>
+            @{
+                foreach(Association a in ViewBag.ProductsInCategory.Products)
+                {
+                    <li>@a.Product.Name</li>
+                }
+            }
+        </ul>
+    </div>
+    <div class="col d-flex justify-content-center">
+        <form action="/addProductTo" method="post">
+            <h5>Add Product:</h5>
+            <br>
+            <div class="form-group">
+                <select name="ProductId" class="form-control">
+                    <option hidden selected disabled>Choose One</option>
+                    @{
+                        foreach(Product p in ViewBag.ProductsNotInCategory)
+                        {
+                            if(!Model.Products.Any(d => d.ProductId == p.ProductId))
+                            {
+                                <option value="@p.ProductId">@p.Name</option>
+                            }
+                        }
+                    }
+                </select>
+            </div>
+            <input type="hidden" name="CategoryId" value="@Model.CategoryId">
+            <div class="form-group">
+                <input type="submit" value="Add" class="btn btn-success">
+            </div>
+        </form>
+    </div>
+</div>

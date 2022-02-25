@@ -85,6 +85,46 @@ namespace SportsORM.Controllers
         [HttpGet("level_3")]
         public IActionResult Level3()
         {
+            ViewBag.SamEvans = _context.Players.Include(p => p.CurrentTeam)
+            .Include(p => p.AllTeams)
+            .ThenInclude(t => t.TeamOfPlayer)
+            .Where(p => p.FirstName =="Samuel" && p.LastName == "Evans")
+            .ToList();
+
+            ViewBag.Manitoba = _context.Teams.Include(p => p.AllPlayers)
+            .ThenInclude(t => t.PlayerOnTeam)
+            .Where(t => t.TeamName == "Tiger-Cats")
+            .ToList();
+
+            ViewBag.Vikings = _context.Teams.Include(p => p.CurrentPlayers)
+            .ThenInclude(p => p.AllTeams)
+            .Where(p => p.TeamName == "Vikings")
+            .ToList();
+
+            ViewBag.Gray = _context.Players.Include(p => p.CurrentTeam)
+            .Include(p => p.AllTeams)
+            .ThenInclude(t => t.TeamOfPlayer)
+            .Where(p => p.LastName == "Gray") 
+            .ToList();
+
+            ViewBag.Josh = _context.Leagues
+            .Include(p => p.Teams)
+            .ThenInclude(p => p.AllPlayers)
+            .ToList();
+            
+
+            ViewBag.Twelve = _context.Leagues
+            .Include(p => p.Teams)
+            .ThenInclude(p => p.AllPlayers);
+
+            ViewBag.TeamsPlayedOn = _context.Players
+            .Include(p => p.AllTeams)
+            .ThenInclude(p => p.PlayerOnTeam.AllTeams)
+            .OrderBy(p => p.AllTeams.Count);
+            //I need to order players by number of teams they've played on
+            //I can list all players sorted 
+            //whew baby steps helped
+
             return View();
         }
 
