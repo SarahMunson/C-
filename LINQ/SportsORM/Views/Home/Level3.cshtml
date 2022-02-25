@@ -47,17 +47,16 @@
     <div class="card-body">
         @{
             <ul>
-                @foreach(Team t in ViewBag.Vikings)
+                @foreach(Team p in ViewBag.Vikings)
                 {
-                    foreach(PlayerTeam p in t.AllPlayers)
+                    foreach(PlayerTeam t in p.AllPlayers)
                     {
-                        if(p.PlayerOnTeam.CurrentTeam.TeamName != "Vikings")
-                        {
-                            <li>@p.PlayerOnTeam.FirstName @p.PlayerOnTeam.LastName</li>
+                            if(t.PlayerOnTeam.CurrentTeam.TeamName != "Vikings")
+                            {
+                                <li>@t.PlayerOnTeam.FirstName @t.PlayerOnTeam.LastName</li>
+                            }
                         }
                     }
-                
-                }
             </ul>
         }
     </div>
@@ -78,7 +77,7 @@
             </ul>
         }
     </div>
-        <div class="card-header bg-dark text-light">Joshuas in Baseball</div>
+        <div class="card-header bg-dark text-light">Joshuas in AF Baseball League</div>
     <div class="card-body">
         @{
             <ul>
@@ -87,12 +86,15 @@
                     if(l.Name == "Atlantic Federation of Amateur Baseball Players")
                     {
                         foreach(Team t in l.Teams)
-                        {
-                            foreach(PlayerTeam pt in t.AllPlayers)
                             {
-                                <li>@pt.PlayerOnTeam.FirstName @pt.PlayerOnTeam.LastName</li>
+                                foreach(PlayerTeam pt in t.AllPlayers)
+                                {
+                                    if(pt.PlayerOnTeam.FirstName == "Joshua")
+                                    {
+                                        <li>@pt.PlayerOnTeam.FirstName @pt.PlayerOnTeam.LastName</li>
+                                    }
+                                }
                             }
-                        }
                     }
                 }
             </ul>

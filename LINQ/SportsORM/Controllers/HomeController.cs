@@ -96,8 +96,8 @@ namespace SportsORM.Controllers
             .Where(t => t.TeamName == "Tiger-Cats")
             .ToList();
 
-            ViewBag.Vikings = _context.Teams.Include(p => p.CurrentPlayers)
-            .ThenInclude(p => p.AllTeams)
+            ViewBag.Vikings = _context.Teams.Include(p => p.AllPlayers)
+            .ThenInclude(p => p.PlayerOnTeam)
             .Where(p => p.TeamName == "Vikings")
             .ToList();
 
@@ -110,6 +110,7 @@ namespace SportsORM.Controllers
             ViewBag.Josh = _context.Leagues
             .Include(p => p.Teams)
             .ThenInclude(p => p.AllPlayers)
+            .ThenInclude(p => p.PlayerOnTeam)
             .ToList();
             
 
@@ -121,9 +122,6 @@ namespace SportsORM.Controllers
             .Include(p => p.AllTeams)
             .ThenInclude(p => p.PlayerOnTeam.AllTeams)
             .OrderBy(p => p.AllTeams.Count);
-            //I need to order players by number of teams they've played on
-            //I can list all players sorted 
-            //whew baby steps helped
 
             return View();
         }
