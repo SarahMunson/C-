@@ -1,0 +1,54 @@
+@model User
+
+<div class="d-flex space-evenly">
+    <h1>Welcome @Model.FirstName</h1>
+</div>
+<table class="table table-hover">
+    <tr>
+        <th>Wedding</th>
+        <th>Date</th>
+        <th>Guest</th>
+        <th>Action</th>
+    </tr>
+    @{
+    foreach(Wedding g in ViewBag.Weddings)
+    {
+        <tr>
+            <td>
+                <a href="/OneWedding/@g.WeddingId">@g.NameOne & @g.NameTwo</a>
+            </td>
+            <td>@g.Date.ToString("dd MMMM"), @g.Date.Year</td>
+            <td>@g.Guests.Count</td>
+            @if(g.UserId == Model.UserId)    
+            {
+                <td>
+                    <a href="/delete/@g.WeddingId" class="btn btn-danger">Delete</a>
+                </td>
+            } 
+            @if(g.Guests.Any(p => p.UserId == Model.UserId))
+            {
+                <td>
+                    <form action="/unRSVP" method="post">
+                            <input type="hidden" name="UserId" value="@Model.UserId">
+                            <input type="hidden" name="WeddingId" value="@g.WeddingId">
+                            <input type="submit" value="unRSVP" class="text-dark nav-link">
+                    </form>
+                </td> 
+            }
+            @if(!g.Guests.Any(p => p.UserId == Model.UserId) && g.UserId != Model.UserId)
+            {
+                <td>
+                    <form action="/RSVP" method="post">
+                        <input type="hidden" name="UserId" value="@Model.UserId">
+                        <input type="hidden" name="WeddingId" value="@g.WeddingId">
+                        <input type="submit" value="RSVP" class="text-dark nav-link">
+                    </form>
+                </td> 
+            } 
+        </tr>
+    }
+    } 
+</table>
+<div class="form-group">
+    <a href="/newWedding" class="btn btn-info">New Wedding</a>
+</div>

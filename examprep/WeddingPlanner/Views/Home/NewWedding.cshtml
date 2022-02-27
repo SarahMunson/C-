@@ -1,0 +1,31 @@
+@model Wedding
+
+<div class="d-flex justify-content-between">
+        <h1>Plan Your Wedding</h1>
+</div>
+<form action="/newWedding" method="post">
+    <div class="form-group">
+        <label for="NameOne">Betrothed One</label>
+        <input asp-for="NameOne" class="form-control">
+        <span asp-validation-for="NameOne" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="NameTwo">Betrothed Two</label>
+        <input asp-for="NameTwo" class="form-control">
+        <span asp-validation-for="NameTwo" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Date">Date</label>
+        <input asp-for="Date" class="form-control">
+        <span asp-validation-for="Date" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Address">Address</label>
+        <input asp-for="Address" class="form-control">
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+    <input type="hidden" name="UserId" value="@ViewBag.loggedIn">
+    <div class="form-group">
+        <input type="submit" value="Submit" class="btn btn-warning">
+    </div>
+</form>
